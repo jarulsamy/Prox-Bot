@@ -51,7 +51,6 @@ class Prox(object):
         # Payload to login
         self.user_payload = {"username": f"{user}@pam", "password": password}
 
-        # https://beta.lan:8006/api2/json
         self.host = host
         self.node_name = node_name
         # Complete login
