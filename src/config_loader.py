@@ -6,7 +6,7 @@ import re
 
 def load(filename: str):
     """
-    Load json config, with password salting
+    Load json config, with base64 password salting
     """
     with open(filename) as f:
         data = json.loads(f.read())

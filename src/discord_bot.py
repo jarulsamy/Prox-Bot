@@ -4,7 +4,7 @@ import discord
 from discord.ext import commands
 from discord.ext.commands import Bot
 from dotenv import load_dotenv
-from proxmox_controller import Prox
+from pyproxmoxer.proxmox import Proxmox
 
 
 def check_channel(ctx):
@@ -67,7 +67,7 @@ if __name__ == "__main__":
     TOKEN = os.getenv("TOKEN")
     CHANNEL = "proxmox"
 
-    prox = Prox(
+    prox = Proxmox(
         os.getenv("PROX_USER"),
         os.getenv("PROX_PASS"),
         os.getenv("PROX_HOST"),
